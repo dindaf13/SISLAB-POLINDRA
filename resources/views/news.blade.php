@@ -1,0 +1,1 @@
+<h1>Tampilan News</h1>
