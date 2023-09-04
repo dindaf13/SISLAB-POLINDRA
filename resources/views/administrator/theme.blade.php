@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/images/favicon/favicon.ico') }}" />
 
     <!-- Libs CSS -->
 
-    <link href="./assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="./assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
-    <link href="./assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
-    <link href="./assets/libs/prismjs/themes/prism-okaidia.css" rel="stylesheet" />
+    <link href="{{ url('assets/libs/bootstrap-icons/font/bootstrap-icons.css') }}" rel="stylesheet" />
+    <link href="{{ url('assets/libs/dropzone/dist/dropzone.css') }}" rel="stylesheet" />
+    <link href="{{ url('assets/libs/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet" />
+    <link href="{{ url('assets/libs/prismjs/themes/prism-okaidia.css') }}" rel="stylesheet" />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css" />
+    <link rel="stylesheet" href="{{ url('assets/css/theme.min.css') }}" />
     <title>SISLAB-POLINDRA</title>
 </head>
 
@@ -40,7 +40,7 @@
           <!-- Navbar nav -->
           <ul class="navbar-nav flex-column" id="sideNavbar">
             <li class="nav-item">
-                <a class="nav-link has-arrow active" href="./dashboard">
+                <a class="nav-link has-arrow active" href="{{ route ('dashboard') }}">
                     <i data-feather="home" class="nav-icon icon-xs me-2"></i>
                     Dashboard
                 </a>
@@ -62,7 +62,7 @@
                 <div id="navPages" class="collapse" data-bs-parent="#sideNavbar">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="./user_admin">
+                            <a class="nav-link" href="{{ route ('user_admin') }}">
                                 Admin
                             </a>
                         </li>
@@ -212,7 +212,7 @@
                   <div class="avatar avatar-md avatar-indicators avatar-online">
                     <img
                       alt="avatar"
-                      src="./assets/images/avatar/avatar-1.jpg"
+                      src="{{ url('assets/images/avatar/avatar-1.jpg') }}"
                       class="rounded-circle"
                     />
                   </div>
@@ -282,8 +282,8 @@
             </ul>
           </nav>
         </div>
-        <!-- Container fluid -->
-        <div class="bg-primary pt-10 pb-21"></div>
+        {{-- <!-- Container fluid -->
+        <div class="bg-primary pt-10 pb-21"></div> --}}
         @yield('content')
         {{-- <div class="container-fluid mt-n22 px-6">
           <div class="row">
@@ -1283,18 +1283,18 @@
     
     <!-- Scripts -->
     <!-- Libs JS -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="./assets/libs/feather-icons/dist/feather.min.js"></script>
-    <script src="./assets/libs/prismjs/prism.js"></script>
-    <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="./assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-    <script src="./assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="{{ url('assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url('assets/libs/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ url('assets/libs/feather-icons/dist/feather.min.js') }}"></script>
+    <script src="{{ url('assets/libs/prismjs/prism.js') }}"></script>
+    <script src="{{ url('assets/libs/apexcharts/dist/apexcharts.min.js') }}"></script>
+    <script src="{{ url('assets/libs/dropzone/dist/min/dropzone.min.js') }}"></script>
+    <script src=".{{ url('ssets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js') }}"></script>
+    <script src="{{ url('assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js') }}"></script>
 
     <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
+    <script src="{{ url('assets/js/theme.min.js') }}"></script>
 </body>
 
 </html>

@@ -71,6 +71,15 @@ Route::get('/forgot_password', [AuthController::class, 'forgot_password'])->name
 // Route::get('/administrator', [AdministratorController::class, 'administrator'])->name('administrator');
 Route::get('/dashboard', [AdministratorController::class, 'dashboard'])->name('dashboard');
 Route::get('/user_admin', [AdministratorController::class, 'user_admin'])->name('user_admin');
+
+Route::get('/admin_create', [AdministratorController::class, 'admin_create'])->name('admin_create'); // buat nampilin form
+Route::post('/insertdata', [AdministratorController::class, 'insertdata'])->name('insertdata'); // buat masukkin data ke database
+
+Route::get('/tampilkan_data_admin/{id}', [AdministratorController::class, 'tampilkan_data_admin'])->name('tampilkan_data_admin'); // buat nampilin form
+Route::post('/update_data_admin/{id}', [AdministratorController::class, 'update_data_admin'])->name('update_data_admin'); // buat masukkin data ke database
+
+Route::get('/delete_data_admin/{id}', [AdministratorController::class, 'delete_data_admin'])->name('delete_data_admin'); // buat nampilin form
+
 Route::get('/user_mhs', [AdministratorController::class, 'user_mhs'])->name('user_mhs');
 Route::get('/data_barang', [AdministratorController::class, 'data_barang'])->name('data_barang');
 // Route::get('/crud_barang', [AdministratorController::class, 'crud_barang'])->name('crud_barang');
@@ -86,7 +95,7 @@ Route::get('/testing-input-dummy', [TestInputController::class, 'index']);
 
 Route::get('/testing-input', [TestInputController::class, 'test_input'])->name('input.get');
 
-Route::get('/testing-input-form', [TestInputController::class, 'form']);
+Route::get('/testing-input-form', [TestInputController::class, 'form'])->name('testing-input-form');
 
 Route::get('/testing-view', [TestInputController::class, 'table']);
 // Auth::routes();

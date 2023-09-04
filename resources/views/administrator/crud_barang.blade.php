@@ -1,7 +1,7 @@
 @extends('administrator.theme')
 @section('content')
     <!-- Container fluid -->
-    {{-- <div class="bg-primary pt-10 pb-21"></div> --}}
+    <div class="bg-primary pt-10 pb-21"></div>
     <div class="container-fluid mt-n22 px-6">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12">
@@ -12,7 +12,7 @@
                             <h3 class="mb-0 text-white"><i data-feather="box" class="nav-icon icon-xs me-2"></i>Barang</h3>
                         </div>
                         <div>
-                            <a class="btn btn-white" class="nav-link" href="./testing-input-form" href="#"><i data-feather="plus" class="nav-icon icon-xs me-2"></i>Tambah</a>
+                            <a class="btn btn-white" class="nav-link" href="{{ route ('testing-input-form') }}"><i data-feather="plus" class="nav-icon icon-xs me-2"></i>Tambah</a>
                         </div>
                     </div>
                 </div>

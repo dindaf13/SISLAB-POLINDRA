@@ -12,7 +12,7 @@
                             {{-- <a href="../index.html"><img src="../assets/images/brand/logo/logo-primary.svg" class="mb-2"
                                     alt=""></a> --}}
                             <a href="./index.html">
-                                <b>SISLAB POLINDRA</b>
+                                <h1><a class="navbar-brand" style="color: rgb(70, 128, 236)"><b>SISLAB POLINDRA</b></a></h1>
                             </a>
                             <p class="mb-6">Please enter your user information.</p>
                         </div>
@@ -70,8 +70,6 @@
 
                                 </div>
                             </div>
-
-
                         </form>
                     </div>
                 </div>
